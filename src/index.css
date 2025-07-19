@@ -1,22 +1,6 @@
+@import "tailwindcss";
+
 html {
+    font-family: "PT Serif", serif;
     scroll-behavior: smooth;
-}
-
-body, h1, h2, h3, h4, a, p {
-    margin: 0;
-    font-weight: normal;
-}
-
-a {
-    text-decoration: none;
-}
-
-img {
-    display: block;
-}
-
-.sombra {
-    box-shadow: 10px 10px 36px -4px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 36px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 36px -4px rgba(0,0,0,0.75);
 }
