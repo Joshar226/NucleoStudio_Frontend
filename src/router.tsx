@@ -1,19 +1,29 @@
 import { BrowserRouter, Route, Routes } from "react-router";
-import BasicLandingView from "./views/BasicLandingView";
-import StandardLandingView from "./views/StandardLandingView";
-import PremiumLandingView from "./views/PremiumLandingView";
-import HomeView from "./views/HomeView";
+import AppLayout from "./layout/AppLayout";
+import ScrollToTop from "./components/ScrollToTop";
+import { lazy, Suspense } from "react";
+import Spinner from "./components/Spinner";
+
+const HomeView = lazy(() => import('./views/HomeView'))
+const AboutUsView = lazy(() => import('./views/AboutUsView'))
+const PrivacyPolicyView = lazy(() => import('./views/PrivacyPolicyView'))
+const ContactView = lazy(() => import('./views/ContactView'))
 
 
 export default function Router() {
   return (
     <BrowserRouter>
-        <Routes>
-            <Route path="/" element={<HomeView />}/>
-            <Route path="/pagina-basica" element={<BasicLandingView />}/>
-            <Route path="/pagina-estandar" element={<StandardLandingView />}/>
-            <Route path="/pagina-premium" element={<PremiumLandingView />}/>
+      <ScrollToTop />
+      <Suspense fallback={<Spinner/>}>
+        <Routes >
+          <Route element={<AppLayout/>}>
+            <Route path="/" element={<HomeView/>}/>
+            <Route path="/about" element={<AboutUsView/>}/>
+            <Route path="/privacy-policy" element={ <PrivacyPolicyView />}/>
+            <Route path="/contact" element={<ContactView/>}/>
+          </Route>
         </Routes>
+      </Suspense>
     </BrowserRouter>
   )
 }

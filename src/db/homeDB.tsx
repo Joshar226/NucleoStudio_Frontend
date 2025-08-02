@@ -1,95 +1,78 @@
+import { BiWorld } from "react-icons/bi";
 import { FaCode } from "react-icons/fa6";
-import { GoDatabase } from "react-icons/go";
+import { GoDatabase, GoTrophy } from "react-icons/go";
 import { HiOutlinePaintBrush } from "react-icons/hi2";
 import { MdOutlineUpdate } from "react-icons/md";
+import { LuChartNoAxesCombined } from "react-icons/lu";
+import { IoCartOutline } from "react-icons/io5";
+import { FiMessageSquare } from "react-icons/fi";
 
 export const servicios = [
   {
-    icon: <HiOutlinePaintBrush size={"full"} />,
+    icon: <HiOutlinePaintBrush className="w-full h-full" />,
     titulo: "Diseño y Desarrollo Web",
     descripcion:
-      "Creamos sitios web modernos y funcionales, adaptados a las necesidades de tu negocio. Nos enfocamos en ofrecer un diseño atractivo, responsivo y optimizado para brindar la mejor experiencia de usuario",
+      "Creamos sitios web modernos y funcionales, adaptados a las necesidades de tu negocio.",
   },
   {
-    icon: <FaCode size={"full"} />,
+    icon: <FaCode className="w-full h-full" />,
     titulo: "Desarrollo frontend / backend",
     descripcion:
-      "Desarrollamos interfaces intuitivas y dinámicas en el frontend, junto con sistemas robustos y eficientes en el backend. Utilizamos tecnologías avanzadas para garantizar un rendimiento óptimo y una experiencia fluida",
+      "Desarrollamos interfaces intuitivas y dinámicas en el frontend, junto con sistemas robustos y eficientes en el backend.",
   },
   {
-    icon: <GoDatabase size={"full"} />,
+    icon: <GoDatabase className="w-full h-full" />,
     titulo: "Integraciones con bases de datos",
     descripcion:
-      "Conectamos tu sitio o aplicación con bases de datos seguras y escalables, optimizando la gestión de la información. Implementamos soluciones que garantizan rapidez, fiabilidad y acceso eficiente a los dato",
+      "Conectamos tu sitio o aplicación con bases de datos seguras y escalables, optimizando la gestión de la información.",
   },
   {
-    icon: <MdOutlineUpdate size={"full"} />,
+    icon: <MdOutlineUpdate className="w-full h-full" />,
     titulo: "Mantenimiento Web",
     descripcion:
-      "Actualizamos tus contenidos, optimizamos velocidad y nos aseguramos que tu sitio siga funcionando perfecto",
+      "Actualizamos tus contenidos, optimizamos velocidad y nos aseguramos que tu sitio siga funcionando perfecto.",
   },
 ];
 
-export const planes = [
+export const ventajas = [
   {
-    titulo: "Plan Básico",
-    descripcion:
-      "Ideal para emprendedores que necesitan presencia rápida y sencilla en línea",
-    incluye: [
-      "1 página (tipo landing)",
-      "Secciones personalizables",
-      "Diseño personalizado",
-      "Responsive completo",
-      "Botón de WhatsApp o enlace directo",
-      "Hosting gratuito 1 año",
-      "Optimización ligera de carga",
-    ],
-    opcional: [
-      "Formulario de contacto funcional",
-      "Cambios después de entrega",
-    ],
-    color: "text-[#3AF900]",
+    titulo: 'Presencia las 24/7',
+    icon: <BiWorld className="w-full h-full"/>,
+    descripcion: 'Tu negocio estará disponible en todo momento, incluso cuando estás durmiendo. Los clientes pueden ver tu catálogo, agendar citas o contactarte en cualquier momento'
   },
+  {
+    titulo: 'Confianza y credibilidad',
+    icon: <LuChartNoAxesCombined className="w-full h-full"/>,
+    descripcion: 'Una página profesional genera confianza en tus clientes y te posiciona como un negocio serio y establecido'
+  },
+  {
+    titulo: 'Más ventas, más oportunidades',
+    icon: <IoCartOutline className="w-full h-full"/>,
+    descripcion: 'Con una web bien diseñada puedes aumentar tus ventas, captar nuevos clientes y mostrar productos o servicios de forma atractiva'
+  },
+  {
+    titulo: 'Contacto directo y profesional',
+    icon: <FiMessageSquare  className="w-full h-full"/>,
+    descripcion: 'Un formulario, botón de WhatsApp o correo personalizado hacen que tus clientes se comuniquen fácil y rápido con vos'
+  },
+  {
+    titulo: 'Ventaja frente a la competencia',
+    icon: <GoTrophy className="w-full h-full"/>,
+    descripcion: 'Si tu competencia no tiene página web, ya vas un paso adelante. Y si la tiene, una mejor web te puede destacar'
+  },
+]
 
+export const nosotros = [
   {
-    titulo: "Plan Estándar",
-    descripcion:
-      "Para negocios que necesitan más secciones e identidad de marca",
-    incluye: [
-      "Sitio multipágina",
-      "Diseño personalizado con paleta de colores y tipografía",
-      "Páginas como: Inicio, Servicios, Nosotros, Contacto, entre otros",
-      "Responsive completo",
-      "Formulario de contacto funcional",
-      "Mapa de ubicación (opcional)",
-      "Hosting gratuito 1 año",
-      "Optimización de velocidad"
-    ],
-    opcional: [
-      "Implementación de bases de datos"
-    ],
-    color: "text-[#0051E6]",
+    titulo: 'Misión',
+    descripcion: 'Nuestra misión es ayudar a emprendedores y negocios a dar el salto digital, creando páginas web profesionales, modernas y efectivas que impulsen su crecimiento, aumenten su visibilidad y generen más oportunidades. Nos enfocamos en soluciones accesibles, personalizadas y con soporte real, para que nuestros clientes se enfoquen en lo que mejor saben hacer: su negocio.'
   },
-
   {
-    titulo: "Plan Premium",
-    descripcion:
-      "Para marcas o negocios que necesitan una tienda online o un sitio complejo y a medida.",
-    incluye: [
-      "Sitio multipágina avanzado",
-      "Funciones",
-      "Opción de login, registro, dashboard simple (opcional)",
-      "Panel de administración",
-      "Diseño completamente personalizado y profesional",
-      "SEO",
-      "Animaciones",
-      "Hosting + dominio",
-      "Manual en PDF para el cliente"
-    ],
-    opcional: [
-      "Panel de control más avanzado",
-      "Blog o sección de noticias de bases de datos",
-    ],
-    color: "text-[#EE0000]",
+    titulo: '¿Quiénes Somos?',
+    descripcion: 'Somos un estudio digital enfocado en el desarrollo web personalizado, creado por apasionados del diseño, la programación y el emprendimiento. Entendemos las necesidades reales de los negocios locales y brindamos un servicio cercano, claro y eficiente. No vendemos solo sitios web: ofrecemos presencia digital con propósito.'
   },
-];
+  {
+    titulo: 'Lo que nos diferencia',
+    descripcion: 'En Núcleo Studio nos destacamos por ofrecer un servicio personalizado, claro y completo. Acompañamos a cada cliente desde el primer contacto hasta después de publicar su sitio, brindando soporte real y soluciones a la medida. Nuestras páginas web son modernas, rápidas y adaptables a cualquier dispositivo. Además, te facilitamos todo lo que necesitás en un solo lugar: dominio, hosting, diseño, base de datos, correo profesional y mantenimiento continuo, sin complicaciones ni costos ocultos.'
+  }
+]
