@@ -8,7 +8,7 @@ export default function HomeView() {
   return (
     <>
       <div
-        className="text-center uppercase font-bold flex flex-col items-center
+        className="text-center uppercase font-bold items-center
           px-4 mt-14 gap-5
           md:mt-32 md:gap-7
           xl:mt-40 xl:gap-10
@@ -30,6 +30,10 @@ export default function HomeView() {
         </h2>
         
         <motion.div
+          className="
+            mt-6
+            md:mt-10
+          "
           initial={{ opacity: 0, y: 100 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{
@@ -40,7 +44,7 @@ export default function HomeView() {
           <a
             href="#contact"
             className="bg-[#0098B0] uppercase font-bold text-center shadow-lg shadow-cyan-600 rounded-xl 
-              w-full py-2 text-lg
+              px-9 py-2 text-lg
               md:py-3 md:text-xl md:w-auto md:px-10
               lg:w-auto lg:px-10 lg:text-2xl
 

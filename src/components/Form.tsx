@@ -109,8 +109,8 @@ export default function Form() {
         <div>
           <label className="flex items-center gap-1 justify-center">
             <input type="checkbox" onChange={e => setIsChecked(e.target.checked)}/>
-            <p>He leído y acepto la <Link to={'/privacy-policy'} className="text-blue-400 font-bold text-sm">Politica de Privacidad*</Link></p>
-          </label>
+            <p>He leído y acepto la <Link to={'/privacy-policy'} target="_blank" className="text-blue-400 font-bold text-sm">Politica de Privacidad*</Link></p>
+          </label> 
           {policyError && <ErrorMessage>{policyError}</ErrorMessage>}
         </div>
 
