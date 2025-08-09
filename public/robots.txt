@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://nucleostudiocr.com/sitemap.xml
+Sitemap: https://www.nucleostudiocr.com/sitemap.xml
