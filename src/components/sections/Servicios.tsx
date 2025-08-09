@@ -47,7 +47,7 @@ export default function Servicios() {
         </a>
 
         <a
-            href="https://wa.me/50687468528"
+            href="https://wa.me/50662830706"
             target="_blank"
             className="flex items-center
               mt-8 gap-2.5

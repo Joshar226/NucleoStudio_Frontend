@@ -50,9 +50,11 @@ export default function Form() {
         className="flex flex-col items-center
           px-7 gap-5
           md:px-20
+
+          *:w-full *:md:w-[550px]
         "
       >
-        <div className="C_home-input-contenedor">
+        <div>
           <input
             className={`C_home-input ${errors.name && 'border-b-3 border-red-700'}`}
             type="text"
@@ -64,7 +66,7 @@ export default function Form() {
           {errors.name && <ErrorMessage>{errors.name.message}</ErrorMessage>}
         </div>
 
-        <div className="C_home-input-contenedor">
+        <div>
           <input
             className={`C_home-input ${errors.phone && 'border-b-3 border-red-700'}`}
             type="tel"
@@ -76,7 +78,7 @@ export default function Form() {
           {errors.phone && <ErrorMessage>{errors.phone.message}</ErrorMessage>}
         </div>
 
-        <div className="C_home-input-contenedor">
+        <div>
           <input
             className={`C_home-input ${errors.email && 'border-b-3 border-red-700'}`}
             type="email"
@@ -92,7 +94,7 @@ export default function Form() {
           {errors.email && <ErrorMessage>{errors.email.message}</ErrorMessage>}
         </div>
 
-        <div className="C_home-input-contenedor">
+        <div>
             <textarea
                 className={`C_home-input 
                   h-24 
@@ -127,31 +129,31 @@ export default function Form() {
               transition-all hover:scale-110 hover:shadow-xl  active:scale-110 active:shadow-xl duration-300
             "
         />
-
-        <a  
-          href="https://wa.me/50687468528"
-          target="_blank"
-          className="flex gap-1 items-center
-            mt-3
-            md:text-lg md:mt-4
-            lg:text-xl lg:mt-5
-            xl:text-2xl xl:mt-6
-
-            transition-transform hover:scale-110 duration-300 active:scale-110
-          "
-        >
-            <p>Contáctanos por</p>
-
-            <div className="
-                w-8 
-                md:w-10
-                
-            ">
-                <FaWhatsapp className="w-full h-full"/>
-            </div>
-            <p>WhatsApp</p>
-        </a>
       </form>
+
+      <a  
+        href="https://wa.me/50662830706"
+        target="_blank"
+        className="flex gap-1 items-center justify-center
+          mt-3
+          md:text-lg md:mt-4
+          lg:text-xl lg:mt-5
+          xl:text-2xl xl:mt-6
+
+          transition-transform hover:scale-110 duration-300 active:scale-110
+        "
+      >
+          <p>Contáctanos por</p>
+
+          <div className="
+              w-8 
+              md:w-10
+              
+          ">
+              <FaWhatsapp className="w-full h-full"/>
+          </div>
+          <p>WhatsApp</p>
+      </a>
     </div>
   );
 }

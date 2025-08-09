@@ -1,7 +1,4 @@
 /* FORM */
-.C_home-input-contenedor {
-  width: 550px;
-}
 
 .C_home-input {
   width: 100%;
@@ -10,10 +7,6 @@
 }
 
 @media (max-width: 768px) {
-  .C_home-input-contenedor {
-    width: 100%;
-  }
-
   .C_home-input {
     padding: 8px 12px;
   }

@@ -78,7 +78,7 @@ export default function AppLayout() {
 
 
       <a
-        href="https://wa.me/50687468528"
+        href="https://wa.me/50662830706"
         target="_blank"
         className="fixed bottom-5 right-5 
           transition-transform hover:scale-110 duration-300 active:scale-110
