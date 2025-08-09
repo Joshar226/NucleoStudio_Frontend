@@ -14,7 +14,7 @@ export default function HomeView() {
           xl:mt-40 xl:gap-10
         "
       >
-        <h2
+        <h1
           className="
             text-lg
             md:text-2xl
@@ -27,7 +27,7 @@ export default function HomeView() {
           <span className="text-[#53EAFD]">
             Diseño moderno, responsive <br />y orientado a resultados
           </span>
-        </h2>
+        </h1>
         
         <motion.div
           className="
