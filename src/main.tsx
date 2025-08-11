@@ -5,7 +5,8 @@ import './index.css'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import Router from './router.tsx'
 import { ToastContainer } from 'react-toastify'
-import { Analytics, SpeedInsights } from "@vercel/analytics/react"
+import { Analytics } from "@vercel/analytics/react"
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 const queryClient = new QueryClient()
 
