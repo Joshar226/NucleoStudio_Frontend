@@ -3,10 +3,15 @@ import Slider from "../components/Slider";
 import Form from "../components/Form";
 import Servicios from "../components/sections/Servicios";
 import Ventajas from "../components/sections/Ventajas";
+import { Helmet } from "react-helmet";
 
 export default function HomeView() {
   return (
     <>
+      <Helmet>
+        <title>Nucleo Studio | Diseño web profesional</title>
+        <meta name="description" content="En Nucleo Studio diseñamos y desarrollamos páginas web personalizadas, con dominio, hosting, soporte y más. Potenciá tu negocio en línea"/>
+      </Helmet>
       <div
         className="text-center uppercase font-bold items-center
           px-4 mt-14 gap-5

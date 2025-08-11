@@ -1,9 +1,14 @@
+import { Helmet } from "react-helmet";
 import Form from "../components/Form";
 import { nosotros } from "../db/homeDB";
 
 export default function AboutUsView() {
   return (
     <div>
+      <Helmet>
+        <title>Sobre Nosotros - Nucleo Studio</title>
+        <meta name="description" content="Conoce quienes somos, nuestra misión y que nos diferencia"/>
+      </Helmet>
 
       <h2 className="C_titulo-seccion mt-10
         mx-7

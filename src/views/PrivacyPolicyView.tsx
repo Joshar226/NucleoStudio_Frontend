@@ -1,6 +1,12 @@
+import { Helmet } from "react-helmet";
+
 export default function PrivacyPolicyView() {
   return (
     <>
+      <Helmet>
+        <title>Políticas de Privacidad - Nucleo Studio</title>
+        <meta name="description" content="Conoce nustras políticas de privaciad"/>
+      </Helmet>
       <h2 className="C_titulo-seccion">Políticas de Privacidad</h2>
 
       <div className="mx-auto
