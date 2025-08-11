@@ -1,9 +1,4 @@
-
-
 export default function PrivacyPolicyView() {
-
-
-  
   return (
     <>
       <h2 className="C_titulo-seccion">Políticas de Privacidad</h2>
