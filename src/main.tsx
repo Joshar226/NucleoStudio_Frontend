@@ -5,7 +5,7 @@ import './index.css'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import Router from './router.tsx'
 import { ToastContainer } from 'react-toastify'
-import { Analytics } from "@vercel/analytics/react"
+import { Analytics, SpeedInsights } from "@vercel/analytics/react"
 
 const queryClient = new QueryClient()
 
@@ -21,6 +21,7 @@ createRoot(document.getElementById('root')!).render(
         pauseOnFocusLoss={false}
       />
       <Analytics />
+      <SpeedInsights />
     </QueryClientProvider>
   </StrictMode>
 )
