@@ -11,7 +11,7 @@ export default function Ventajas() {
         xl:mt-52
       "
     >
-      <h3 className="C_titulo-seccion">¿Porque tu negocio deberia de tener una Pagina Web?</h3>
+      <h2 className="C_titulo-seccion">¿Porque tu negocio deberia de tener una Pagina Web?</h2>
 
       <div 
         className="flex 
@@ -54,20 +54,3 @@ export default function Ventajas() {
     </div>
   );
 }
-
-
-
-// 💸 Clientes que buscan en línea y no te encuentran
-// Hoy la mayoría de personas busca en Google antes de comprar. Si no tienes presencia web, simplemente no existes para ellos.
-
-// 🚫 Pérdida de credibilidad
-// Un negocio sin página web genera desconfianza. Tener una web profesional demuestra seriedad y compromiso con tus clientes.
-
-// 🕒 Ventas solo en horario limitado
-// Una página web trabaja 24/7, incluso mientras dormís. Si solo vendés en horario comercial, estás dejando dinero sobre la mesa.
-
-// 📉 Dependencia total de redes sociales
-// Las redes cambian sus algoritmos constantemente. Tu web es un canal propio, estable y sin intermediarios.
-
-// 🌎 Limitación geográfica
-// Con una web podés llegar a más clientes, incluso fuera de tu ciudad. Sin ella, solo te conoce quien pasa por tu local.

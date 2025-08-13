@@ -35,7 +35,7 @@ export default function Form() {
 
   return (
     <div id="contact">
-      <h3 className="C_titulo-seccion">Hablanos de tu proyecto</h3>
+      <h2 className="C_titulo-seccion">Hablanos de tu proyecto</h2>
 
       <form
         onSubmit={handleSubmit(handleCotizacion)}
@@ -144,33 +144,33 @@ export default function Form() {
               transition-all hover:scale-110 hover:shadow-xl  active:scale-110 active:shadow-xl duration-300
             "
         />
-      </form>
 
-      <a
-        href="https://wa.me/50662830706"
-        target="_blank"
-        className="flex gap-1 items-center justify-center
-          mt-3
-          md:text-lg md:mt-4
-          lg:text-xl lg:mt-5
-          xl:text-2xl xl:mt-6
+        <a
+          href="https://wa.me/50662830706"
+          target="_blank"
+          className="flex items-center justify-center
+            mt-3
+            md:text-lg md:mt-4
+            lg:text-xl lg:mt-5
+            xl:text-2xl xl:mt-6
 
-          transition-transform hover:scale-110 duration-300 active:scale-110
-        "
-      >
-        <p>Contáctanos por</p>
-
-        <div
-          className="
-              w-8 
-              md:w-10
-              
+            transition-transform hover:scale-110 duration-300 active:scale-110
           "
         >
-          <FaWhatsapp className="w-full h-full" />
-        </div>
-        <p>WhatsApp</p>
-      </a>
+          <p>Contáctanos por</p>
+
+          <div
+            className="
+                w-8 
+                md:w-10
+              
+            "
+          >
+            <FaWhatsapp className="w-full h-full" />
+          </div>
+          <p>WhatsApp</p>
+        </a>
+      </form>
     </div>
   );
 }

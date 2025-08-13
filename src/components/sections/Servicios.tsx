@@ -13,7 +13,7 @@ export default function Servicios() {
           xl:mt-96
         "
     >
-      <h3 className="C_titulo-seccion">Servicios</h3>
+      <h2 className="C_titulo-seccion">Servicios</h2>
 
       <div
         className="flex flex-col gap-7

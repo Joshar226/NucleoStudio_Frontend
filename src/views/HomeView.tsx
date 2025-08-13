@@ -9,8 +9,8 @@ export default function HomeView() {
   return (
     <>
       <Helmet>
-        <title>Nucleo Studio | Diseño web profesional</title>
-        <meta name="description" content="En Nucleo Studio diseñamos y desarrollamos páginas web personalizadas, con dominio, hosting, soporte y más. Potenciá tu negocio en línea"/>
+        <title>Nucleo Studio | Diseño y Desarrollo web</title>
+        <meta name="description" content="En Nucleo Studio creamos el diseño y desarrollo de tu sitio web, con dominio, hosting, soporte y más. Potenciá tu negocio en línea"/>
       </Helmet>
       <div
         className="text-center uppercase font-bold items-center
@@ -72,7 +72,7 @@ export default function HomeView() {
           xl:mt-52
         "
       >
-        <h3 className="C_titulo-seccion">Tecnologías</h3>
+        <h2 className="C_titulo-seccion">Tecnologías</h2>
         <Slider />
       </section>
 
