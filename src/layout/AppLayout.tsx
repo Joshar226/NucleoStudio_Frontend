@@ -72,6 +72,7 @@ export default function AppLayout() {
           ">
             <a
               href="https://www.facebook.com/profile.php?id=61578946692939"
+              target="_blank"
               className="
                   w-8 
                   md:w-10
@@ -82,6 +83,7 @@ export default function AppLayout() {
 
             <a
               href="https://www.instagram.com/nucleostudiocr"
+              target="_blank"
               className="
                   w-8 
                   md:w-10
