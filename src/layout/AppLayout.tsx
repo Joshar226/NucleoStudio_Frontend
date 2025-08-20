@@ -1,3 +1,4 @@
+import { FaFacebookF, FaInstagram } from "react-icons/fa";
 import { Link, Outlet } from "react-router-dom";
 
 export default function AppLayout() {
@@ -45,8 +46,9 @@ export default function AppLayout() {
         "
       >
         <div className="flex
-          flex-col items-center
-          md:flex-row justify-around
+          flex-col items-center gap-4
+          md:gap-6
+          lg:grid lg:grid-cols-3 place-items-center
         ">
           <Link to={'/'}> 
             <img
@@ -61,11 +63,39 @@ export default function AppLayout() {
               "
             />
           </Link>
+
+          <div className="flex
+            gap-5
+            md:gap-10
+
+            *:hover:scale-125 *:duration-300
+          ">
+            <a
+              href="https://www.facebook.com/profile.php?id=61578946692939"
+              className="
+                  w-8 
+                  md:w-10
+              "
+            >
+              <FaFacebookF className="w-full h-full" />
+            </a>
+
+            <a
+              href="https://www.instagram.com/nucleostudiocr"
+              className="
+                  w-8 
+                  md:w-10
+                
+              "
+            >
+              <FaInstagram className="w-full h-full" />
+            </a>
+          </div>
           
           <div
             className="flex items-center
               flex-col gap-2 mt-2.5
-              md:flex-row md:gap-7
+              lg:flex-row lg:gap-7
             "  
           >
             <Link to={'about'}>Sobre Nosotros</Link> 
@@ -73,7 +103,7 @@ export default function AppLayout() {
           </div>
         </div>
         
-        <p className="text-center mt-10 text-sm">&#169; {new Date().getFullYear()} Nucleo Studio. Todos los derechos reservados.</p>
+        <p className="text-center mt-5 text-sm">&#169; {new Date().getFullYear()} Nucleo Studio. Todos los derechos reservados.</p>
       </footer>
 
 
