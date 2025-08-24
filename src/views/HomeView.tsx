@@ -11,6 +11,7 @@ export default function HomeView() {
       <Helmet>
         <title>Nucleo Studio | Diseño y Desarrollo web</title>
         <meta name="description" content="En Nucleo Studio creamos el diseño y desarrollo de tu sitio web, con dominio, hosting, soporte y más. Potenciá tu negocio en línea"/>
+        <link rel="canonical" href="https://www.nucleostudiocr.com/" />
       </Helmet>
       <div
         className="text-center uppercase font-bold items-center

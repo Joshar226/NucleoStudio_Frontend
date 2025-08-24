@@ -7,6 +7,7 @@ export default function ContactView() {
       <Helmet>
         <title>Contacto - Nucleo Studio</title>
         <meta name="description" content="Contáctanos para servicios de diseño web con Nucleo Studio. Potenciá tu negocio en línea"/>
+        <link rel="canonical" href="https://www.nucleostudiocr.com/contact" />
       </Helmet>
 
       <h1 className="C_titulo-seccion

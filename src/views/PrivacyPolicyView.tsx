@@ -6,6 +6,7 @@ export default function PrivacyPolicyView() {
       <Helmet>
         <title>Políticas de Privacidad - Nucleo Studio</title>
         <meta name="description" content="Conoce nustras políticas de privaciad"/>
+        <link rel="canonical" href="https://www.nucleostudiocr.com/privacy-policy" />
       </Helmet>
       <h1 className="C_titulo-seccion">Políticas de Privacidad</h1>
 

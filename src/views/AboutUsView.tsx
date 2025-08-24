@@ -8,6 +8,7 @@ export default function AboutUsView() {
       <Helmet>
         <title>Sobre Nosotros - Nucleo Studio</title>
         <meta name="description" content="Conoce quienes somos, nuestra misión y que nos diferencia"/>
+        <link rel="canonical" href="https://www.nucleostudiocr.com/about" />
       </Helmet>
 
       <h1 className="C_titulo-seccion mt-10
