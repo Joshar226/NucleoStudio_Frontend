@@ -1,9 +1,8 @@
 import { motion } from "motion/react";
 import Slider from "../components/Slider";
-import Form from "../components/Form";
 import Servicios from "../components/sections/Servicios";
 import Ventajas from "../components/sections/Ventajas";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 
 export default function HomeView() {
   return (
@@ -48,7 +47,7 @@ export default function HomeView() {
           }}
         >
           <a
-            href="#contact"
+            href="https://wa.me/50662830706"
             className="bg-[#0098B0] uppercase font-bold text-center shadow-lg shadow-cyan-600 rounded-xl 
               px-9 py-2 text-lg
               md:py-3 md:text-xl md:w-auto md:px-10
@@ -56,6 +55,7 @@ export default function HomeView() {
 
               transition-all hover:scale-110 hover:shadow-xl  active:scale-110 active:shadow-xl duration-300
             "
+            target="_blank"
           >
             Cotizar Proyecto
           </a>
@@ -76,16 +76,6 @@ export default function HomeView() {
         <h2 className="C_titulo-seccion">Tecnologías</h2>
         <Slider />
       </section>
-
-        <section 
-          className="
-            mt-36
-            md:px-20
-            lg:mt-44
-            xl:mt-52
-          ">
-          <Form />
-        </section>
     </>
   );
 }
