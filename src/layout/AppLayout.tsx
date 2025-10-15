@@ -5,7 +5,9 @@ export default function AppLayout() {
   return (
     <div className="bg-[#0D0D0D] text-white">
       <nav
-        className="flex py-3.5 justify-around items-center
+        className="flex py-3.5 
+          justify-center
+          lg:justify-start mx-[25%]
         "
       >
         <Link to={'/'}>
@@ -21,20 +23,6 @@ export default function AppLayout() {
             "
           />
         </Link>
-
-        <div
-          className=" text-center
-            grid grid-cols-2 gap-1   text-sm
-            md:flex md:text-base md:*:border-r-2 md:*:border-white md:*:pr-2.5 md:*:last:border-none md:*:last:px-0
-            lg:gap-4
-            xl:text-lg xl:gap-5
-            
-            *:transition-transform *:hover:scale-110 *:active:scale-110 *:duration-200 *:ease-in-out 
-          "
-        >
-          <Link to={'/'}>Inicio</Link>
-          <Link to={'/contact'}>Contacto</Link>
-        </div>
       </nav>
 
       <Outlet/>
@@ -74,9 +62,10 @@ export default function AppLayout() {
               href="https://www.facebook.com/profile.php?id=61578946692939"
               target="_blank"
               className="
-                  w-8 
-                  md:w-10
+                w-8 
+                md:w-10
               "
+              aria-label="Facebook"
             >
               <FaFacebookF className="w-full h-full" />
             </a>
@@ -85,10 +74,10 @@ export default function AppLayout() {
               href="https://www.instagram.com/nucleostudiocr"
               target="_blank"
               className="
-                  w-8 
-                  md:w-10
-                
+                w-8 
+                md:w-10
               "
+              aria-label="Instagram"
             >
               <FaInstagram className="w-full h-full" />
             </a>

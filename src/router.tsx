@@ -7,7 +7,6 @@ import Spinner from "./components/Spinner";
 const HomeView = lazy(() => import('./views/HomeView'))
 const AboutUsView = lazy(() => import('./views/AboutUsView'))
 const PrivacyPolicyView = lazy(() => import('./views/PrivacyPolicyView'))
-const ContactView = lazy(() => import('./views/ContactView'))
 
 
 export default function Router() {
@@ -20,7 +19,6 @@ export default function Router() {
             <Route path="/" element={<HomeView/>}/>
             <Route path="/about" element={<AboutUsView/>}/>
             <Route path="/privacy-policy" element={ <PrivacyPolicyView />}/>
-            <Route path="/contact" element={<ContactView/>}/>
           </Route>
         </Routes>
       </Suspense>
